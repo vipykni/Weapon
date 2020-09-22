@@ -2,6 +2,6 @@
 
 Queen::Queen()
 {
-    weapon = new KnifeBehavior();
+    weapon = new BowAndArrowBehavior();
 
 }
