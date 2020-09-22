@@ -4,6 +4,7 @@
 #include "knifebehavior.h"
 #include "character.h"
 #include "king.h"
+#include "queen.h"
 
 int main(int argc, char *argv[])
 {
@@ -14,7 +15,11 @@ int main(int argc, char *argv[])
    WeaponBehavior *knife = new KnifeBehavior();
    p->setWeapon(knife);
    p->fight();
-
+   Character *q = new Queen();
+   q->fight();
+   WeaponBehavior *sword = new SwordBehavior();
+   q->setWeapon(sword);
+   q->fight();
 
     return a.exec();
 }
