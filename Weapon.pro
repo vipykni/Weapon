@@ -17,7 +17,10 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
     weaponbehavior.cpp \
-    swordbehavior.cpp
+    swordbehavior.cpp \
+    character.cpp \
+    king.cpp \
+    knifebehavior.cpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -26,4 +29,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 HEADERS += \
     weaponbehavior.h \
-    swordbehavior.h
+    swordbehavior.h \
+    character.h \
+    king.h \
+    knifebehavior.h
